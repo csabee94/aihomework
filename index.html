@@ -1,0 +1,106 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    
+    <title>AIMotive | Homework</title>
+    <meta name="description" content="Homework">
+    <meta name="author" content="Csaba Szy">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="dist/style.css">
+</head>
+
+<body id="page-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
+        <div class="container bg-light">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">Logo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#application">Try Out!</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="bg-aigreen text-white">
+        <div class="container bg-aigreen text-center">
+            <h1>Welcome on board</h1>
+            <p class="lead">Please look around, and try out our new developed application</p>
+        </div>
+    </header>
+    
+    <section id="application">
+        <div class="container text-center">
+            <h2>Try out!</h2>
+            <div class="row">
+                <div class="col col-2">
+                    <div class="box"><img src="images/1.jpg"></div>
+                    <div class="box"><img src="images/2.jpg"></div>
+                    <div class="box"><img src="images/3.jpg"></div>
+                    <div class="box"><img src="images/4.jpg"></div>
+                    <div class="box"><img src="images/5.jpg"></div>
+                </div>
+
+                <div class="col col-8">
+                    <div class="surface">
+                        <div id="editor" class="full-image">
+                            <img class="selected-image" src="images/1.jpg">
+                        </div>
+                        <canvas id="worksheet"></canvas>
+                    </div>
+                </div>
+
+                <div class="col col-2">
+                    <label for="category">Category:</label>
+                    <select class="form-control" id="category">
+                        <option class="text-primary" value="0">■ Car</option>
+                        <option class="text-success" value="1">■ Traffic Light</option>
+                        <option class="text-danger" value="2">■ Scooter</option>
+                        <option class="text-warning" value="3">■ Police</option>
+                    </select>
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-secondary active">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked><i class="far fa-square"></i>
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="options" id="option2" autocomplete="off"><i class="fas fa-draw-polygon"></i>
+                        </label>
+                    </div>
+                    <label for="angles">Number of angles:</label>
+                    <select id="angles" class="form-control" id="angles" disabled>
+                        <option value="3">3</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                    <button id="save" class="btn btn-full-width"><i class="fas fa-save">   Save</i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>Contact us</h2>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
